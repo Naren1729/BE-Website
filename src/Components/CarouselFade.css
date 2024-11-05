@@ -1,0 +1,33 @@
+/* Decrease the size of the carousel */
+.custom-carousel {
+  width: 60%; /* Set your desired width */
+  height: 600px; /* Set your desired height */
+  margin: 0 auto; /* Center the carousel */
+  margin-top: 10px; /* Space below the navbar */
+}
+
+/* Adjust the size of the carousel images */
+.carousel-image {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Change the color of the carousel control arrows */
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  background-color: black; /* Set the color to black */
+  border-radius: 50%; /* Optional: make the arrow background circular */
+}
+
+/* Optional: Add a black background to the entire control for better visibility */
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+  color: black;
+  opacity: 1; /* Make the controls fully visible */
+}
+
+.custom-carousel .carousel-control-prev:hover,
+.custom-carousel .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Optional hover effect */
+}
