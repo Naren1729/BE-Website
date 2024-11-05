@@ -1,5 +1,6 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import logo from "./logo1.png";
 import "./Navbar.css";
@@ -25,7 +26,7 @@ function NavBar() {
             <Nav className="ms-auto">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#features">About Us</Nav.Link>
-              <Nav.Link href="#products">Products</Nav.Link>
+              <Nav.Link as={Link} to="/products">Products</Nav.Link>
               <Nav.Link href="#contact">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>

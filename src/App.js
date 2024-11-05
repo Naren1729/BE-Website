@@ -5,6 +5,7 @@ import CarouselFade from "./Components/Carousel";
 import Footer from "./Components/Footer";
 import NavBar from "./Components/Navbar";
 import UserForm from "./Components/UserForm";
+import Products from "./Components/Products";
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
         <NavBar />
         <div style={{ paddingTop: "70px" }}>
           <Routes>
-            {/* Define routes for each component */}
             <Route path="/" element={<CarouselFade />} />
             <Route path="/enquiry" element={<UserForm />} />
+            <Route path="/products" element={<Products />} />
           </Routes>
         </div>
         <Footer />
