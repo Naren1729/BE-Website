@@ -7,7 +7,7 @@ import "./Navbar.css";
 function NavBar() {
   return (
     <>
-      <Navbar data-bs-theme="light" sticky="top" className="navBar">
+      <Navbar expand="lg" data-bs-theme="light" sticky="top" className="navBar">
         <Container>
           <Navbar.Brand href="#home" className="custom-font-size">
             <img
@@ -19,13 +19,16 @@ function NavBar() {
             />
             Bhagiradha Enterprises
           </Navbar.Brand>
-          <Nav className="ml-auto ">
-            {" "}
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">About Us</Nav.Link>
-            <Nav.Link href="#pricing">Products</Nav.Link>
-            <Nav.Link href="#pricing">Contact Us</Nav.Link>
-          </Nav>
+          {/* Toggle button for mobile */}
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#features">About Us</Nav.Link>
+              <Nav.Link href="#products">Products</Nav.Link>
+              <Nav.Link href="#contact">Contact Us</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
