@@ -16,12 +16,12 @@ function App() {
         <NavBar />
         <div style={{ paddingTop: "70px" }}>
           <Routes>
-            <Route path="/" element={<CarouselFade />} />
+            <Route path="/" element={<><CarouselFade /> <Why /> </>} />
             <Route path="/enquiry" element={<UserForm />} />
             <Route path="/products" element={<Products />} />
           </Routes>
         </div>
-        <Why />
+
         <Footer />
       </div>
     </Router>
