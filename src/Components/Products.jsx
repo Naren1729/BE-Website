@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import UserForm from "./UserForm";
 
 function Products() {
     const products = [
@@ -29,9 +30,7 @@ function Products() {
                                 <Link to={`/products/${product.id}`} className="btn btn-primary btn-sm me-2">
                                     View
                                 </Link>
-                                <Link to="/enquiry" className="btn btn-secondary btn-sm">
-                                    Enquire Now
-                                </Link>
+                                <UserForm />
                             </td>
                         </tr>
                     ))}
