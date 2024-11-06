@@ -6,6 +6,8 @@ import Footer from "./Components/Footer";
 import NavBar from "./Components/Navbar";
 import UserForm from "./Components/UserForm";
 import Products from "./Components/Products";
+import Why from "./Components/Why";
+import Contactform from "./Components/Contactform";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
             <Route path="/products" element={<Products />} />
           </Routes>
         </div>
+        <Why />
         <Footer />
       </div>
     </Router>

@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 // Import local images
-import firstSlide from "./logo.png";
-import secondSlide from "./logo1.png";
-import thirdSlide from "./logo.png";
+import firstSlide from "./Wwd.jpg";
+import secondSlide from "./Intermediates.jpg";
+import thirdSlide from "./Api.jpg";
 import "./CarouselFade.css"; // Import the custom CSS file
 
 function CarouselFade() {
@@ -12,9 +12,10 @@ function CarouselFade() {
       <Carousel.Item>
         <img src={firstSlide} alt="First slide" className="carousel-image" />
         <Carousel.Caption className="text-dark">
-          <h3 className="font-weight-bold">First slide label</h3>
+          <h3 className="font-weight-bold">What we do</h3>
           <p className="font-weight-bold">
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
+            We make high-quality APIs and intermediates, which are the backbone
+            of the pharmaceutical industry.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -22,9 +23,10 @@ function CarouselFade() {
       <Carousel.Item>
         <img src={secondSlide} alt="Second slide" className="carousel-image" />
         <Carousel.Caption className="text-dark">
-          <h3 className="font-weight-bold">Second slide label</h3>
+          <h3 className="font-weight-bold">Intermediates</h3>
           <p className="font-weight-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pharmaceutical intermediates play a crucial role in the production
+            of life-saving medications.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -32,9 +34,12 @@ function CarouselFade() {
       <Carousel.Item>
         <img src={thirdSlide} alt="Third slide" className="carousel-image" />
         <Carousel.Caption className="text-dark">
-          <h3 className="font-weight-bold">Third slide label</h3>
+          <h3 className="font-weight-bold">
+            Active Pharmaceutical Ingredients
+          </h3>
           <p className="font-weight-bold">
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Active substances that provide pharmacological activity in
+            medications
           </p>
         </Carousel.Caption>
       </Carousel.Item>
