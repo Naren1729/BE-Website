@@ -29,7 +29,7 @@ function NavBar() {
               <Nav.Link as={Link} to="/products">
                 Products
               </Nav.Link>
-              <Nav.Link href="#contact">Contact Us</Nav.Link>
+              <Nav.Link href="/contact">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

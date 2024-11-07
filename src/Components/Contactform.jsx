@@ -3,10 +3,9 @@ import "./Contactform.css"; // Import the CSS file
 
 const Contactform = () => {
   return (
-    <section>
-      <div className="container">
-        {/* Contact Info Section */}
-        <div className="contactInfo">
+    <section className="section1">
+      <div className="container1">
+        <div className="contactInfo1">
           <div>
             <h2>Contact Info</h2>
             <ul className="info">
@@ -41,33 +40,31 @@ const Contactform = () => {
             </ul>
           </div>
 
-          {/* Social Links */}
           <ul className="sci">
             <li>
-              <a href="https://www.facebook.com/nassosanagn/">
+              <a href="">
                 <img src="/images/1.png" alt="Facebook" />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/nassosanagn_/?hl=el">
+              <a href="">
                 <img src="/images/3.png" alt="Instagram" />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/nassosanagn">
+              <a href="">
                 <img src="/images/2.png" alt="Twitter" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/nassos-anagnostopoulos-2b9631196/">
+              <a href="">
                 <img src="/images/5.png" alt="LinkedIn" />
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Contact Form Section */}
-        <div className="contactForm">
+        <div className="contactForm1">
           <h2>Send a Message</h2>
           <div className="formBox">
             <div className="inputBox w50">

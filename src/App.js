@@ -13,15 +13,25 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar />
-        <div style={{ paddingTop: "70px" }}>
-          <Routes>
-            <Route path="/" element={<><CarouselFade /> <Why /> </>} />
-            <Route path="/products" element={<Products />} />
-          </Routes>
-        </div>
-
-        <Footer />
+        <>
+          <NavBar />
+          <div style={{ paddingTop: "70px" }}>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <CarouselFade /> <Why /> <Contactform />{" "}
+                  </>
+                }
+              />
+              <Route path="/products" element={<Products />} />
+              <Route path="/contact" element={<Contactform />} />
+            </Routes>
+          </div>
+          {/* <Contactform /> */}
+          <Footer />
+        </>
       </div>
     </Router>
   );
