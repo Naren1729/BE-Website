@@ -2,7 +2,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import logo from "./logo3.png";
+import logo from "./logo21.png";
 import "./Navbar.css";
 
 function NavBar() {
