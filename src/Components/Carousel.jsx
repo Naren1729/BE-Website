@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 // Import local images
-import firstSlide from "./Wwd.jpg";
-import secondSlide from "./Intermediates.jpg";
-import thirdSlide from "./Api.jpg";
+import firstSlide from "../assets/Wwd.jpg";
+import secondSlide from "../assets/Intermediates.jpg";
+import thirdSlide from "../assets/Api.jpg";
 import "./CarouselFade.css"; // Import the custom CSS file
 
 function CarouselFade() {

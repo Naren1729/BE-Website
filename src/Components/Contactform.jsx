@@ -1,5 +1,8 @@
 import React from "react";
 import "./Contactform.css"; // Import the CSS file
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';   
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Contactform = () => {
   return (
@@ -8,14 +11,12 @@ const Contactform = () => {
         <div className="contactInfo1">
           <div>
             <h2>Contact Info</h2>
-            <ul className="info">
+            <ul class="info">
               <li>
                 <span>
-                  <img src="/images/location.png" alt="location" />
+                  <FontAwesomeIcon className="my-icon" icon={faMapMarkerAlt} />
                 </span>
                 <span>
-                  184 Ippokratous Street
-                  <br />
                   Athens, Gr
                   <br />
                   11472
@@ -23,7 +24,7 @@ const Contactform = () => {
               </li>
               <li>
                 <span>
-                  <img src="/images/mail.png" alt="mail" />
+                  <FontAwesomeIcon className="my-icon" icon={faEnvelope} />
                 </span>
                 <span>
                   <a href="mailto:nassosanagn@gmail.com">
@@ -33,37 +34,23 @@ const Contactform = () => {
               </li>
               <li>
                 <span>
-                  <img src="/images/call.png" alt="phone" />
+                  <FontAwesomeIcon className="my-icon" icon={faPhone} />
                 </span>
-                <span>702-279-3488</span>
+                <span>
+                  702-279-3488
+                </span>
+              </li>
+              <li>
+                <span>
+                  <FontAwesomeIcon className="my-icon" icon={faLinkedinIn} />
+                </span>
+                <span>
+                  linkedin address
+                </span>
               </li>
             </ul>
           </div>
-
-          <ul className="sci">
-            <li>
-              <a href="">
-                <img src="/images/1.png" alt="Facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="/images/3.png" alt="Instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="/images/2.png" alt="Twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="/images/5.png" alt="LinkedIn" />
-              </a>
-            </li>
-          </ul>
         </div>
-
         <div className="contactForm1">
           <h2>Send a Message</h2>
           <div className="formBox">

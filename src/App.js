@@ -1,13 +1,12 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-import CarouselFade from "./Components/Carousel";
-import Footer from "./Components/Footer";
-import NavBar from "./Components/Navbar";
-import UserForm from "./Components/UserForm";
-import Products from "./Components/Products";
-import Why from "./Components/Why";
-import Contactform from "./Components/Contactform";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import HomePage from './Components/HomePage'; 
+import Products from './Components/Products';
+import UserForm from './Components/UserForm';
+import NavBar from './Components/Navbar';
+import Footer from './Components/Footer';
+import Contactform from './Components/Contactform';
 
 function App() {
   return (
@@ -15,22 +14,14 @@ function App() {
       <div className="App">
         <>
           <NavBar />
-          <div style={{ paddingTop: "70px" }}>
+          <div style={{ paddingTop: "40px" }}>
             <Routes>
-              <Route
-                path="/"
-                element={
-                  <>
-                    <CarouselFade /> <Why /> <Contactform />{" "}
-                  </>
-                }
-              />
+              <Route path="/" element={<HomePage />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/user-form" element={<UserForm />} />
               <Route path="/contact" element={<Contactform />} />
             </Routes>
           </div>
-          {/* <Contactform /> */}
-          <Footer />
         </>
       </div>
     </Router>

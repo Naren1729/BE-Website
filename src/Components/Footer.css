@@ -1,0 +1,10 @@
+.Footer{
+    padding-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    margin-top: 10px;
+    height: 140px;
+}

@@ -1,0 +1,15 @@
+.carousel .legend {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    text-align: center;
+    height: 40px;
+  }
+
+.image-height{
+    height: 300px;
+}

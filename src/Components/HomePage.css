@@ -1,0 +1,19 @@
+.quote{
+    background-image: url("../assets/quote1.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 120px;
+}
+
+.heading{
+    text-align: left;
+    width: 60vw;
+    margin-bottom: 60px;
+    color: aliceblue;
+    margin-left: 40px;
+}
