@@ -1,0 +1,43 @@
+.about-us {
+    /* ... */
+  }
+  
+  .leadership {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .leader-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    margin: 20px;
+  }
+  
+  .leader-card img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .leader-card h3, .leader-card p {
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .company-details, .company-history {
+    background-color: #fff;
+    border-radius: 10px;
+    margin:20px;
+  }
+  .leader-info{
+    margin: '10px';
+  }

@@ -29,7 +29,7 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="#features">About Us</Nav.Link>
+              <Nav.Link href="/aboutus">About Us</Nav.Link>
               <Nav.Link as={Link} to="/products">
                 Products
               </Nav.Link>
