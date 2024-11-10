@@ -1,10 +1,16 @@
-.Footer{
-    padding-top: 40px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: white;
-    margin-top: 10vw;
-    height: 140px;
+.Footer {
+  /* padding-top: 40px; */
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  /* background-color: white; */
+  /* margin-top: 10vw; */
+  /* height: 140px; */
+}
+
+.footer-section {
+  background-color: aliceblue;
+  padding: 5px;
+  /* position: fixed; */
 }

@@ -2,10 +2,13 @@
   background: #bbe4e9;
   border-radius: 15px;
   font-size: 1.25em;
+  align-items: center;
+  /* position: relative !important; */
   /* padding: 5px; */
-  margin: 10px;
+  /* margin: 10px; */
   /* flex-direction: row; */
   /* text-decoration: solid; */
+  max-width: calc();
 }
 
 b {
@@ -18,3 +21,7 @@ b {
 /* .logo-heading {
   flex-direction: row;
 } */
+
+.container {
+  margin: 0 !important;
+}
