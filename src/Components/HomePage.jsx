@@ -16,7 +16,7 @@ function HomePage() {
       }}
     >
       <h1 className="heading">
-        Quotation vifofv ivobirevoirpv 3tvpbvrprovbp3opvbvbpb befofeivb
+        "Dedicated to healing, inspired by science, driven by compassion."
       </h1>
       {/* <CarouselFade /> */}
       <Carousel1 />

@@ -12,9 +12,9 @@ export default function Footer() {
   return (
     <MDBFooter className="text-center text-lg-start text-muted Footer">
       <section className="footer-section">
-        <MDBContainer className="text-center text-md-start mt-5">
+        <MDBContainer className="text-center text-md-start mt-4">
           <MDBRow className="mt-3">
-            <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
+            <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4 text-center">
               <h6 className="text-uppercase fw-bold mb-4">
                 <MDBIcon color="secondary" icon="gem" className="me-3" />
                 Company name
@@ -23,30 +23,6 @@ export default function Footer() {
                 Here you can use rows and columns to organize your footer
                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.
-              </p>
-            </MDBCol>
-
-            <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  React
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Laravel
-                </a>
               </p>
             </MDBCol>
 
@@ -74,10 +50,10 @@ export default function Footer() {
               </p>
             </MDBCol>
 
-            <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
+            <MDBCol md="4" lg="3" xl="3" className="mx-left mb-md-0 mb-4 text-center">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <MDBIcon color="secondary" icon="home" className="me-2" />
+                <MDBIcon color="secondary" icon="home" className="me-3" />
                 New York, NY 10012, US
               </p>
               <p>
