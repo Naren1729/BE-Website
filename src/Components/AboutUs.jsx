@@ -11,7 +11,7 @@ function AboutUs() {
       </div>
 
       <section className="leadership" style={{display:'flex',flexDirection:'column'}} >
-        <h2 style={{ color: 'white' ,textAlign:'left'}}>Our Leadership</h2>
+        <h2 style={{ color: 'white' ,textAlign:'left',marginLeft:'20px'}}>Our Leadership</h2>
         <div className="leader-cards" style={{display:'flex',flexDirection:'row',justifyContent:'center'}}>
           <div className="leader-card">
             <img src="md1.jpg" alt="Dr. John Doe" />
