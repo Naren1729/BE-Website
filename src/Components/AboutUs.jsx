@@ -6,12 +6,32 @@ import Footer from './Footer';
 function AboutUs() {
   return (
     <div className="about-us">
-      <div className="hero-image">
-        <h1 style={{ color: 'white' }}>Innovation in Healthcare</h1>
-      </div>
-
+      <section className="company-info"style={{display:'flex',alignSelf:'left'}}>
+        <div className="company-details">
+          <h2 >About Bhagiratha Enterprises</h2>
+          <p className="about-p">Bhagiratha Enterprises has been a leader in the pharmaceutical industry for over 20 years. Our mission is to provide innovative healthcare solutions that improve the quality of life for people around the world.</p>
+          <p className="about-p">We are committed to:</p>
+          <ul className="about-p">
+            <li>Research and Development</li>
+            <li>Patient Care</li>
+            <li>Ethical Business Practices</li>
+          </ul>
+        </div>
+        <div className="company-history">
+          <h2>Our History</h2>
+          <p className="about-p">Founded in 2000, Bhagiratha Enterprises started as a small family business and has grown into a multinational corporation. Our commitment to quality and innovation has been the cornerstone of our success.</p>
+          <p className="about-p">Key milestones in our journey:</p>
+          <ul className="about-p">
+            <li>2000: Company Founded</li>
+            <li>2005: First International Expansion</li>
+            <li>2010: Launch of Flagship Product</li>
+            <li>2015: Acquisition of Leading Pharmaceutical Company</li>
+            <li>2020: Global Recognition for Innovation</li>
+          </ul>
+        </div>
+      </section>
       <section className="leadership" style={{ display: 'flex', flexDirection: 'column' }} >
-        <h2 style={{ color: 'white', textAlign: 'center' }}>Our Leadership</h2>
+        <h2 style={{textAlign: 'center' }}>Our Leadership</h2>
         <div className="leader-cards" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
           <div className="leader-cards" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
             <div className="leader-card">
@@ -31,31 +51,6 @@ function AboutUs() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="company-info">
-        <div className="company-details">
-          <h2 style={{ color: 'black' }}>About Bhagiratha Enterprises</h2>
-          <p>Bhagiratha Enterprises has been a leader in the pharmaceutical industry for over 20 years. Our mission is to provide innovative healthcare solutions that improve the quality of life for people around the world.</p>
-          <p>We are committed to:</p>
-          <ul>
-            <li>Research and Development</li>
-            <li>Patient Care</li>
-            <li>Ethical Business Practices</li>
-          </ul>
-        </div>
-        <div className="company-history">
-          <h2 style={{ color: '#FF0080' }}>Our History</h2>
-          <p>Founded in 2000, Bhagiratha Enterprises started as a small family business and has grown into a multinational corporation. Our commitment to quality and innovation has been the cornerstone of our success.</p>
-          <p>Key milestones in our journey:</p>
-          <ul>
-            <li>2000: Company Founded</li>
-            <li>2005: First International Expansion</li>
-            <li>2010: Launch of Flagship Product</li>
-            <li>2015: Acquisition of Leading Pharmaceutical Company</li>
-            <li>2020: Global Recognition for Innovation</li>
-          </ul>
         </div>
       </section>
     </div>

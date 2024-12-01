@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 .my-icon {
-  color: white;
+  color: #113366  ;
 }
 .section1 {
   display: flex;
@@ -48,9 +48,9 @@
 }
 
 .container1 .contactInfo1 h2 {
-  color: #fff;
+  color: #113366  ;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .container1 .contactInfo1 ul.info {
@@ -74,7 +74,7 @@
 
 /* for gmail */
 .container1 .contactInfo1 ul.info li span a {
-  color: #fff;
+  color: #113366  ;
   text-decoration: none;
   width: 30px;
   min-width: 30px;
@@ -86,9 +86,9 @@
 }
 
 .container1 .contactInfo1 ul.info li span:nth-child(2) {
-  color: #fff;
+  color:#113366  ;
   margin-left: 10px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .container1 .contactInfo1 ul.sci {
@@ -122,7 +122,7 @@
 }
 
 .container1 .contactForm1 h2 {
-  color: #bbe4e9;
+  color: #113366;
   font-size: 24px;
   font-weight: 500;
 }
@@ -183,7 +183,7 @@
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #bbe4e9;
+  color: #113366  ;
   font-weight: 500;
 }
 
@@ -193,7 +193,7 @@
   cursor: pointer;
   background: #bbe4e9;
   border-radius: 20px;
-  color: #fff;
+  color: #113366  ;
   border: none;
   max-width: 150px;
   padding: 12px;

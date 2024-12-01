@@ -52,7 +52,7 @@ const Contactform = () => {
           </div>
         </div>
         <div className="contactForm1">
-          <h2>Send a Message</h2>
+          <h2 style={{color:'#113366'}}>Send a Message</h2>
           <div className="formBox">
             <div className="inputBox w50">
               <input type="text" required />

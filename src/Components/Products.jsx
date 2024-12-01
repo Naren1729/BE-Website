@@ -27,7 +27,7 @@ function Products() {
                             <td>{index + 1}</td>
                             <td>{product.name}</td>
                             <td>
-                                <Link to={`/products/${product.id}`} className="btn btn-primary btn-sm me-2">
+                                <Link to={`/products/${product.id}`} className="btn btn-dark btn-sm me-2">
                                     View
                                 </Link>
                                 <UserForm />

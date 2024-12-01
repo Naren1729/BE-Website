@@ -19,7 +19,7 @@ function HomePage() {
         "Dedicated to healing, inspired by science, driven by compassion."
       </h1>
       {/* <CarouselFade /> */}
-      <Why />
+      <Why/>
       <AboutUs/>
       <div className="quote-card">
         <p className="quote-a">Thinking how to know more about us..</p>

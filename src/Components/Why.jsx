@@ -10,15 +10,15 @@ function Why() {
           Why <span className="highlight">BE</span> is The Right Choice for You
         </h2>
 
-        <div className="cards-container">
+        <div className="cards-container"> */
           {/* Card 1: Expert Instructors */}
-          <div className="card">
-            <h3 style={{color:'#113366'}}>Regulatory Approvals</h3>
+          {/* <div className="card"> */}
+            {/* <h3 style={{color:'#113366'}}>Regulatory Approvals</h3>
             <p style={{color:'black'}}> 
               Following the ICH guidelines have become bread and butter for our
               employees.
-            </p>
-          </div>
+            </p> */}
+          {/* </div>
 
           {/* Card 2: Career-Boost Certify */}
           <div className="card">
