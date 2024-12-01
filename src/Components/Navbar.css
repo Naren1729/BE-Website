@@ -2,19 +2,38 @@
   background: #bbe4e9;
   border-radius: 15px;
   font-size: 1.25em;
-  /* padding: 5px; */
-  margin: 10px;
-  /* flex-direction: row; */
-  /* text-decoration: solid; */
+  align-items: center;
+  max-width: 100%;
+  padding: 10px 15px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Keeps the logo on the left and links on the right */
+  margin: 0 !important;
+  /* Ensures the container has no margin */
+}
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Adds space between the logo and the text */
 }
 
 b {
   font-size: 1.5em;
 }
-.navbar-container {
-  flex-direction: inherit;
+
+.navbar-nav {
+  margin-left: auto;
+  /* Pushes NavLinks to the extreme right */
 }
 
-/* .logo-heading {
-  flex-direction: row;
-} */
+.navbar-nav .nav-link {
+  font-size: 1em;
+  margin-left: 15px;
+  /* Adds spacing between individual links */
+}

@@ -10,23 +10,25 @@ function AboutUs() {
         <h1 style={{ color: 'white' }}>Innovation in Healthcare</h1>
       </div>
 
-      <section className="leadership" style={{display:'flex',flexDirection:'column'}} >
-        <h2 style={{ color: 'white' ,textAlign:'left',marginLeft:'20px'}}>Our Leadership</h2>
-        <div className="leader-cards" style={{display:'flex',flexDirection:'row',justifyContent:'center'}}>
-          <div className="leader-card">
-            <img src="md1.jpg" alt="Dr. John Doe" />
-            <div className="leader-info">
-              <h3>Dr. John Doe</h3>
-              <p>Managing Director</p>
-              <p>With a deep understanding of the pharmaceutical industry, Dr. Doe brings a wealth of experience and strategic vision to Bhagiratha Enterprises. His leadership has been instrumental in driving innovation and ensuring the highest standards of quality.</p>
+      <section className="leadership" style={{ display: 'flex', flexDirection: 'column' }} >
+        <h2 style={{ color: 'white', textAlign: 'center' }}>Our Leadership</h2>
+        <div className="leader-cards" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+          <div className="leader-cards" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+            <div className="leader-card">
+              <img src="md1.jpg" alt="Dr. John Doe" />
+              <div className="leader-info">
+                <h3>Dr. John Doe</h3>
+                <p>Managing Director</p>
+                <p>With a deep understanding of the pharmaceutical industry, Dr. Doe brings a wealth of experience and strategic vision to Bhagiratha Enterprises...</p>
+              </div>
             </div>
-          </div>
-          <div className="leader-card">
-            <img src="md2.jpg" alt="Dr. Jane Smith" />
-            <div className="leader-info">
-              <h3>Dr. Jane Smith</h3>
-              <p>Co-Managing Director</p>
-              <p>Dr. Smith is a renowned expert in clinical research and drug development. Her passion for patient care and scientific excellence has significantly contributed to the success of Bhagiratha Enterprises.</p>
+            <div className="leader-card">
+              <img src="md2.jpg" alt="Dr. Jane Smith" />
+              <div className="leader-info">
+                <h3>Dr. Jane Smith</h3>
+                <p>Co-Managing Director</p>
+                <p>Dr. Smith is a renowned expert in clinical research and drug development. Her passion for patient care and scientific excellence has significantly contributed to the success of Bhagiratha Enterprises.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -34,7 +36,7 @@ function AboutUs() {
 
       <section className="company-info">
         <div className="company-details">
-          <h2 style={{color:'cadetblue'}}>About Bhagiratha Enterprises</h2>
+          <h2 style={{ color: 'cadetblue' }}>About Bhagiratha Enterprises</h2>
           <p>Bhagiratha Enterprises has been a leader in the pharmaceutical industry for over 20 years. Our mission is to provide innovative healthcare solutions that improve the quality of life for people around the world.</p>
           <p>We are committed to:</p>
           <ul>
@@ -44,7 +46,7 @@ function AboutUs() {
           </ul>
         </div>
         <div className="company-history">
-          <h2 style={{color:'cadetblue'}}>Our History</h2>
+          <h2 style={{ color: 'cadetblue' }}>Our History</h2>
           <p>Founded in 2000, Bhagiratha Enterprises started as a small family business and has grown into a multinational corporation. Our commitment to quality and innovation has been the cornerstone of our success.</p>
           <p>Key milestones in our journey:</p>
           <ul>

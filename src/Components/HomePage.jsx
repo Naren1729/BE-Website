@@ -1,17 +1,25 @@
-import React from 'react';
-import CarouselFade from './Carousel';
-import Why from './Why';
-import Contactform from './Contactform';
-import Carousel1 from './Carousel1';
-import Footer from './Footer';
-import './HomePage.css'
+import React from "react";
+import CarouselFade from "./Carousel";
+import Why from "./Why";
+import Contactform from "./Contactform";
+import Carousel1 from "./Carousel1";
+import Footer from "./Footer";
+import "./HomePage.css";
 
 function HomePage() {
   return (
-    <div style={{display:'flex',flexDirection:'column',alignContent:'center',marginBottom:300}}>
-      <h1 className='heading'>Quotation vifofv ivobirevoirpv 3tvpbvrprovbp3opvbvbpb befofeivb</h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignContent: "center",
+      }}
+    >
+      <h1 className="heading">
+        "Dedicated to healing, inspired by science, driven by compassion."
+      </h1>
       {/* <CarouselFade /> */}
-      <Carousel1/>
+      <Carousel1 />
       <Why />
       <Contactform />
       <Footer />
