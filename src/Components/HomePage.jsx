@@ -1,10 +1,10 @@
 import React from "react";
 import CarouselFade from "./Carousel";
 import Why from "./Why";
-import Contactform from "./Contactform";
-import Carousel1 from "./Carousel1";
 import Footer from "./Footer";
 import "./HomePage.css";
+import AboutUs from "./AboutUs";
+import {Link} from "react-router-dom";
 
 function HomePage() {
   return (
@@ -19,9 +19,14 @@ function HomePage() {
         "Dedicated to healing, inspired by science, driven by compassion."
       </h1>
       {/* <CarouselFade /> */}
-      <Carousel1 />
       <Why />
-      <Contactform />
+      <AboutUs/>
+      <div className="quote-card">
+        <p className="quote-a">Thinking how to know more about us..</p>
+        <Link to="/contact" className="contact-button">
+          Contact Us
+        </Link>
+      </div>
       <Footer />
     </div>
   );

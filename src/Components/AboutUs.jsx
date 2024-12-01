@@ -36,7 +36,7 @@ function AboutUs() {
 
       <section className="company-info">
         <div className="company-details">
-          <h2 style={{ color: 'cadetblue' }}>About Bhagiratha Enterprises</h2>
+          <h2 style={{ color: 'black' }}>About Bhagiratha Enterprises</h2>
           <p>Bhagiratha Enterprises has been a leader in the pharmaceutical industry for over 20 years. Our mission is to provide innovative healthcare solutions that improve the quality of life for people around the world.</p>
           <p>We are committed to:</p>
           <ul>
@@ -46,7 +46,7 @@ function AboutUs() {
           </ul>
         </div>
         <div className="company-history">
-          <h2 style={{ color: 'cadetblue' }}>Our History</h2>
+          <h2 style={{ color: '#FF0080' }}>Our History</h2>
           <p>Founded in 2000, Bhagiratha Enterprises started as a small family business and has grown into a multinational corporation. Our commitment to quality and innovation has been the cornerstone of our success.</p>
           <p>Key milestones in our journey:</p>
           <ul>
@@ -58,10 +58,6 @@ function AboutUs() {
           </ul>
         </div>
       </section>
-
-      <Contactform />
-
-      <Footer />
     </div>
   );
 }

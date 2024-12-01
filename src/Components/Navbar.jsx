@@ -28,7 +28,6 @@ function NavBar() {
           {/* Nav Links aligned to the extreme right */}
           <Nav className="navbar-nav">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/aboutus">About Us</Nav.Link>
             <Nav.Link as={Link} to="/products">
               Products
             </Nav.Link>

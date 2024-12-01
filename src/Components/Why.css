@@ -20,7 +20,9 @@
   justify-content: center;
   gap: 20px;
 }
-
+card-p{
+  color:black
+}
 .card {
   background-color: #f9f9f9;
   padding: 20px;

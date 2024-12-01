@@ -9,6 +9,7 @@ import AboutUs from './Components/AboutUs';
 //import Footer from './Components/Footer';
 import Contactform from './Components/Contactform';
 
+
 function App() {
   return (
     <Router>
@@ -18,7 +19,6 @@ function App() {
           <div style={{ paddingTop: "40px" }}>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path='/aboutus' element={<AboutUs/>} />
               <Route path="/products" element={<Products />} />
               <Route path="/user-form" element={<UserForm />} />
               <Route path="/contact" element={<Contactform />} />

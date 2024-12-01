@@ -6,7 +6,17 @@
   display: flex;
   justify-content: space-between;
 }
-
+h2{
+  color: black;
+}
+p{
+  color: #800080;
+  font-weight: 600;
+}
+ul{
+  color: #800080;
+  font-weight: 600;
+}
 .leader-card {
   background-color: rgba(255, 255, 255, 0.5);
   /* 50% opacity */
