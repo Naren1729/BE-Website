@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
 import './App.css';
 import HomePage from './Components/HomePage'; 
 import Products from './Components/Products';
@@ -22,6 +22,7 @@ function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/user-form" element={<UserForm />} />
               <Route path="/contact" element={<Contactform />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </div>
         </>
