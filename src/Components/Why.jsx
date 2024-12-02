@@ -6,9 +6,17 @@ function Why() {
   return (
     <div className="app-container">
       <section className="why-choose-us">
-        <h2 style={{color:'aliceblue'}}>
-          Why <span className="highlight">BE</span> is The Right Choice for You
-        </h2>
+      <h2 className="why-h2"style={{ marginBottom:'60px',fontSize:'35px',textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        Why 
+        <img 
+          src="/static/media/logo2 (1).357a13a3535de37e2c8a.png" 
+          alt="Logo" 
+          width="40" 
+          height="40" 
+          style={{ margin: '0 8px' }} 
+        />
+        is The Right Choice for You
+      </h2>
 
         <div className="cards-container"> */
           {/* Card 1: Expert Instructors */}

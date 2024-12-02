@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import UserForm from "./UserForm";
+import "./Products.css"; // Add a separate CSS file for better styling control
 
 function Products() {
     const products = [
@@ -11,14 +12,14 @@ function Products() {
     ];
 
     return (
-        <div className="container mt-5">
-            <h2>Products</h2>
-            <table className="table table-striped">
+        <div className="products-container">
+            <h2 className="products-title">Our Products</h2>
+            <table className="products-table">
                 <thead>
                     <tr>
-                        <th scope="col">S.no</th>
-                        <th scope="col">Product Name</th>
-                        <th scope="col">Actions</th>
+                        <th>S.No</th>
+                        <th>Product Name</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,7 +28,7 @@ function Products() {
                             <td>{index + 1}</td>
                             <td>{product.name}</td>
                             <td>
-                                <Link to={`/products/${product.id}`} className="btn btn-dark btn-sm me-2">
+                                <Link to={`/products/${product.id}`} className="view-btn">
                                     View
                                 </Link>
                                 <UserForm />
