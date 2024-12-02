@@ -1,6 +1,7 @@
 import React from "react";
 import "./Why.css"; // Create a separate CSS file or use inline styles
 import { color } from "three/webgpu";
+import logo from "../assets/logo2.png";
 
 function Why() {
   return (
@@ -19,7 +20,7 @@ function Why() {
         >
           Why
           <img
-            src="BE-Website\src\assets\logo2.png"
+            src={logo}
             alt="Logo"
             width="40"
             height="40"
