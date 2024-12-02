@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1"
+  },
+  {
+    "id": 2,
+    "name": "Product 2"
+  },
+  {
+    "id": 3,
+    "name": "Product 3"
+  },
+  {
+    "name": "added from admin page",
+    "id": 4
+  },
+  {
+    "name": "adding new ",
+    "id": 5
+  }
+]

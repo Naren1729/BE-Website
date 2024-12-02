@@ -26,7 +26,7 @@ const MyCarousel = () => {
       autoPlay
       showThumbs={false}
       showStatus={false}
-      interval={5000}
+      interval={5050}
     >
       {images.map((image, index) => (
         <div key={index}>

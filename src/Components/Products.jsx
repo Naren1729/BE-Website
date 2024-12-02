@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import UserForm from "./UserForm";
 import "./Products.css"; // Add a separate CSS file for better styling control
+import productsData from "./backend/Products.json"; // Import JSON file directly
 
 function Products() {
-    const products = [
-        { id: 1, name: "Product 1" },
-        { id: 2, name: "Product 2" },
-        { id: 3, name: "Product 3" },
-        // Add more products as needed
-    ];
+    const [products, setProducts] = useState([]);
+
+    // Load products from the JSON file
+    useEffect(() => {
+        setProducts(productsData); // Directly set the imported JSON data
+    }, []);
 
     return (
         <div className="products-container">
