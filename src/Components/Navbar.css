@@ -1,11 +1,12 @@
 .navBar {
-  background: #bbe4e9;
+  /* background: #bbe4e9; */
+  background: azure;
   border-radius: 15px;
   font-size: 1.25em;
   align-items: center;
   max-width: 100%;
   padding: 10px 15px;
-  height: 75px;
+  height: 70px;
   margin: 10px;
 }
 
@@ -37,5 +38,6 @@ b {
 .navbar-nav .nav-link {
   font-size: 1em;
   margin-left: 15px;
+  font-weight: 600;
   /* Adds spacing between individual links */
 }

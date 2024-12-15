@@ -15,58 +15,76 @@ export default function Footer() {
         <MDBContainer className="text-center text-md-start mt-4">
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4 text-center">
-              <h6 className="text-uppercase fw-bold mb-4" style={{color:'#113366'}}>
+              <h6
+                className="text-uppercase fw-bold mb-4"
+                style={{ color: "#113366" }}
+              >
                 <MDBIcon color="#113366" icon="gem" className="me-3" />
-                Company name
+                Bhagiradha Enterprises
               </h6>
-              <p style={{color:'black'}}>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+              <p style={{ color: "black" }}>
+                Bhagiradha Enterprises is a trusted manufacturer of Active
+                Pharmaceutical Intermediates (APIs) and specialty chemicals,
+                delivering innovative solutions across multiple industries.
               </p>
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4 #113366" style={{color:'#113366'}}>Useful links</h6>
-              <p style={{color:'black'}}>
+              <h6
+                className="text-uppercase fw-bold mb-4 #113366"
+                style={{ color: "#113366" }}
+              >
+                Useful links
+              </h6>
+              <p style={{ color: "black" }}>
                 <a href="#!" className="text-reset">
-                  Pricing
+                  Home
                 </a>
               </p>
-              <p style={{color:'black'}}>
-                <a href="#!" className="text-reset"> 
-                  Settings
-                </a>
-              </p>
-              <p style={{color:'black'}}>
+              <p style={{ color: "black" }}>
                 <a href="#!" className="text-reset">
-                  Orders
+                  About Us
                 </a>
               </p>
-              <p style={{color:'black'}}>
+              <p style={{ color: "black" }}>
+                <a href="#!" className="text-reset">
+                  Contact us
+                </a>
+              </p>
+              {/* <p style={{color:'black'}}>
                 <a href="#!" className="text-reset">
                   Help
                 </a>
-              </p>
+              </p> */}
             </MDBCol>
 
-            <MDBCol md="4" lg="3" xl="3" className="mx-left mb-md-0 mb-4 text-center">
-              <h6 className="text-uppercase fw-bold mb-4 #113366"style={{color:'#113366'}}>Contact</h6>
-              <p style={{color:'black'}}>
+            <MDBCol
+              md="4"
+              lg="3"
+              xl="3"
+              className="mx-left mb-md-0 mb-4 text-center"
+            >
+              <h6
+                className="text-uppercase fw-bold mb-4 #113366"
+                style={{ color: "#113366" }}
+              >
+                Contact
+              </h6>
+              <p style={{ color: "black" }}>
                 <MDBIcon color="secondary" icon="home" className="me-3" />
-                New York, NY 10012, US
+                Hyderabad, Telangana, INDIA
               </p>
-              <p style={{color:'black'}}>
+              <p style={{ color: "black" }}>
                 <MDBIcon color="secondary" icon="envelope" className="me-3" />
                 info@example.com
               </p>
-              <p style={{color:'black'}}>
-                <MDBIcon color="secondary" icon="phone" className="me-3"/> + 01
-                234 567 88
+              <p style={{ color: "black" }}>
+                <MDBIcon color="secondary" icon="phone" className="me-3" /> + 91
+                7386016731
               </p>
-              <p style={{color:'black'}}>
-                <MDBIcon color="secondary" icon="print" className="me-3"/> + 01
-                234 567 89
+              <p style={{ color: "black" }}>
+                <MDBIcon color="secondary" icon="print" className="me-3" /> + 91
+                9866673923
               </p>
             </MDBCol>
           </MDBRow>

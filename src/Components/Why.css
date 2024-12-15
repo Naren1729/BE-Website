@@ -20,16 +20,23 @@
   justify-content: center;
   gap: 20px;
 }
-card-p{
-  color:black
+card-p {
+  color: black;
 }
 .card {
-  background-color: #f9f9f9;
+  background-color: skyblue;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 250px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+  background-color: #ffcccb; /* Change background color to highlight on hover */
 }
 
 .highlight-card {
@@ -50,7 +57,7 @@ card-p{
   background-color: #00a954;
 }
 
-.why-h2{
+.why-h2 {
   align-self: center;
   margin-left: 25%;
   margin-bottom: 60px;
@@ -60,4 +67,4 @@ card-p{
   font-weight: 800;
   color: aliceblue;
   border-radius: 5px;
-} 
+}
