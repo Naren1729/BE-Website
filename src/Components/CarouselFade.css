@@ -24,10 +24,10 @@
 }
 
 .caption-bg {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
   padding: 8px 12px;
   border-radius: 6px;
-  background: rgba(0, 0, 0, 0.3);
 
 }
 

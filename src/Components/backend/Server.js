@@ -1,8 +1,14 @@
 const express = require('express');
 const fs = require('fs');
+const path = require('path');
 const cors = require('cors');
 const app = express();
 const PORT = 5050;
+
+const DATA_DIR = __dirname;
+const PRODUCTS_FILE = path.join(DATA_DIR, 'Products.json');
+const USERS_FILE = path.join(DATA_DIR, 'Users.json');
+const ENQUIRIES_FILE = path.join(DATA_DIR, 'Enquiries.json');
 
 app.use(cors());
 app.use(express.json());
@@ -24,7 +30,7 @@ function writeJson(file, obj, cb) {
 
 // Endpoint to get products
 app.get('/api/products', (req, res) => {
-  fs.readFile('products.json', (err, data) => {
+  fs.readFile(PRODUCTS_FILE, (err, data) => {
     if (err) {
       return res.status(500).json({ message: 'Failed to load products' });
     }
@@ -35,13 +41,13 @@ app.get('/api/products', (req, res) => {
 // Endpoint to add a new product
 app.post('/api/products', (req, res) => {
   const newProduct = req.body;
-  fs.readFile('products.json', (err, data) => {
+  fs.readFile(PRODUCTS_FILE, (err, data) => {
     if (err) {
       return res.status(500).json({ message: 'Failed to load products' });
     }
     const products = JSON.parse(data);
     products.push({ ...newProduct, id: products.length + 1 });
-    fs.writeFile('products.json', JSON.stringify(products, null, 2), (err) => {
+    fs.writeFile(PRODUCTS_FILE, JSON.stringify(products, null, 2), (err) => {
       if (err) {
         return res.status(500).json({ message: 'Failed to update products' });
       }
@@ -53,14 +59,18 @@ app.post('/api/products', (req, res) => {
 // Register a new user
 app.post('/api/register', (req, res) => {
   const user = req.body;
-  readJson('users.json', (err, users) => {
+
+  readJson(USERS_FILE, (err, users) => {
+
     if (err) return res.status(500).json({ message: 'Failed to load users' });
     if (users.find(u => u.username === user.username)) {
       return res.status(400).json({ message: 'User already exists' });
     }
     const newUser = { ...user, id: users.length + 1, role: 'user' };
     users.push(newUser);
-    writeJson('users.json', users, err2 => {
+
+    writeJson(USERS_FILE, users, err2 => {
+
       if (err2) return res.status(500).json({ message: 'Failed to save user' });
       res.json({ message: 'Registered successfully' });
     });
@@ -70,7 +80,9 @@ app.post('/api/register', (req, res) => {
 // Login user
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  readJson('users.json', (err, users) => {
+
+  readJson(USERS_FILE, (err, users) => {
+
     if (err) return res.status(500).json({ message: 'Failed to load users' });
     const user = users.find(u => u.username === username && u.password === password);
     if (!user) return res.status(401).json({ message: 'Invalid credentials' });
@@ -81,10 +93,12 @@ app.post('/api/login', (req, res) => {
 // Save enquiry
 app.post('/api/enquiries', (req, res) => {
   const enquiry = req.body;
-  readJson('enquiries.json', (err, enquiries) => {
+
+  readJson(ENQUIRIES_FILE, (err, enquiries) => {
     if (err) return res.status(500).json({ message: 'Failed to load enquiries' });
     enquiries.push({ ...enquiry, id: enquiries.length + 1 });
-    writeJson('enquiries.json', enquiries, err2 => {
+    writeJson(ENQUIRIES_FILE, enquiries, err2 => {
+
       if (err2) return res.status(500).json({ message: 'Failed to save enquiry' });
       res.json({ message: 'Enquiry saved' });
     });
@@ -93,7 +107,9 @@ app.post('/api/enquiries', (req, res) => {
 
 // Get enquiries
 app.get('/api/enquiries', (req, res) => {
-  readJson('enquiries.json', (err, enquiries) => {
+
+  readJson(ENQUIRIES_FILE, (err, enquiries) => {
+
     if (err) return res.status(500).json({ message: 'Failed to load enquiries' });
     res.json(enquiries);
   });

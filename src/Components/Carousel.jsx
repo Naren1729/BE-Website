@@ -11,7 +11,9 @@ function CarouselFade() {
     <Carousel fade className="custom-carousel">
       <Carousel.Item>
         <img src={firstSlide} alt="First slide" className="carousel-image" />
-        <Carousel.Caption className="text-light caption-bg">
+
+        <Carousel.Caption className="text-dark caption-bg">
+
           <h3 className="font-weight-bold">What we do</h3>
           <p className="font-weight-bold">
             We make high-quality APIs and intermediates, which are the backbone
@@ -22,7 +24,9 @@ function CarouselFade() {
 
       <Carousel.Item>
         <img src={secondSlide} alt="Second slide" className="carousel-image" />
-        <Carousel.Caption className="text-light caption-bg">
+
+        <Carousel.Caption className="text-dark caption-bg">
+
           <h3 className="font-weight-bold">Intermediates</h3>
           <p className="font-weight-bold">
             Pharmaceutical intermediates play a crucial role in the production
@@ -33,7 +37,9 @@ function CarouselFade() {
 
       <Carousel.Item>
         <img src={thirdSlide} alt="Third slide" className="carousel-image" />
-        <Carousel.Caption className="text-light caption-bg">
+
+        <Carousel.Caption className="text-dark caption-bg">
+
           <h3 className="font-weight-bold">
             Active Pharmaceutical Ingredients
           </h3>
