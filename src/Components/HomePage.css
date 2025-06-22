@@ -14,7 +14,9 @@
   text-align: left;
   width: 70vw;
   margin-bottom: 20px;
-  color: aliceblue;
+  color: #0d3354;
+  font-family: 'Georgia', serif;
+  font-weight: 700;
   margin-left: 40px;
 }
 
@@ -24,10 +26,10 @@
 }
 
 .quote-card {
-  background-color: #bbe4e9;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -40,15 +42,16 @@
 }
 
 .contact-button {
-  background-color: #113366; /* Main blue from logo */
+  background: linear-gradient(135deg, #0048aa, #40a8f0);
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .contact-button:hover {
-  background-color: #00264d; /* Darker blue on hover */
+  background: linear-gradient(135deg, #003a8c, #2a82c9);
 }

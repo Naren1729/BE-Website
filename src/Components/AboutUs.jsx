@@ -20,37 +20,16 @@ function AboutUs() {
           </p>
           <p className="about-p">We are committed to:</p> */}
           <p className="about-p">
-            For over 10 years, Bhagiradha Enterprises has established itself as
-            a trusted name in the manufacturing of Active Pharmaceutical
-            Intermediates (APIs) and specialty chemicals. We serve diverse
-            industries, including healthcare, agriculture, veterinary sciences,
-            and electronic chemicals, with a focus on custom synthesis and niche
-            product development tailored to specific client needs.
+            For over 10 years we have supplied high-quality Active
+            Pharmaceutical Intermediates and specialty chemicals across
+            healthcare, agriculture and veterinary sectors. Our facilities are
+            equipped for both small and bulk production with a focus on
+            precision and reliability.
           </p>
           <p className="about-p">
-            Our state-of-the-art manufacturing facilities are equipped to handle
-            both small-scale and bulk production, ensuring strict adherence to
-            quality standards. With expertise in solid form selection, particle
-            engineering, and advanced chemistries, we deliver precise,
-            high-quality solutions that meet the most demanding requirements.
-          </p>
-          <p className="about-p">
-            Sustainability and environmental responsibility are at the core of
-            our operations. We adopt eco-friendly manufacturing practices to
-            minimize our environmental footprint while maintaining compliance
-            with global standards. This commitment reflects our dedication to
-            creating value for clients and fostering a better future for the
-            communities we serve.
-          </p>
-          <p className="about-p">
-            Our multidisciplinary team of experts combines scientific innovation
-            with a customer-first approach. We excel in delivering optimized
-            processes, timely solutions, and unparalleled reliability,
-            consistently exceeding client expectations. Bhagiradha Enterprises
-            continues to grow by building long-term partnerships based on trust,
-            innovation, and mutual success. By collaborating with us, you join a
-            company committed to driving progress, empowering industries, and
-            creating limitless possibilities for the future.
+            Sustainability is central to our approach. We follow eco-friendly
+            practices and strict global standards to deliver innovative
+            solutions that create value for our partners and communities.
           </p>
           {/* <ul className="about-p">
             <li>Research and Development</li>

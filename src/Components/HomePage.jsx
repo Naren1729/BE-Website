@@ -16,9 +16,9 @@ function HomePage() {
       }}
     >
       <h1 className="heading">
-        "Dedicated to healing, inspired by science, driven by compassion."
+        Dedicated to healing through science and compassion
       </h1>
-      {/* <CarouselFade /> */}
+      <CarouselFade />
       <Why/>
       <AboutUs/>
       <div className="quote-card">
