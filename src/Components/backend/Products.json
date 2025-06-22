@@ -1,22 +1,32 @@
 [
   {
     "id": 1,
-    "name": "Product 1"
+    "name": "Paracetamol API",
+    "description": "High-purity active ingredient widely used for pain relief and fever reduction."
   },
   {
     "id": 2,
-    "name": "Product 2"
+    "name": "Ibuprofen Intermediate",
+    "description": "Key intermediate for producing ibuprofen with consistent quality."
   },
   {
     "id": 3,
-    "name": "Product 3"
+    "name": "Ciprofloxacin API",
+    "description": "Broad-spectrum antibiotic API manufactured to global standards."
   },
   {
-    "name": "added from admin page",
-    "id": 4
+    "id": 4,
+    "name": "Custom Peptide Synthesis",
+    "description": "Specialty peptides synthesized to client specifications for research."
   },
   {
-    "name": "adding new ",
-    "id": 5
+    "id": 5,
+    "name": "Vitamin D3 Analog",
+    "description": "Stable vitamin D3 analog used in nutritional supplements."
+  },
+  {
+    "id": 6,
+    "name": "New Sample Product",
+    "description": "Placeholder for additional API offerings."
   }
 ]

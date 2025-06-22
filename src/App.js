@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import HomePage from './Components/HomePage'; 
+import HomePage from './Components/HomePage';
 import Products from './Components/Products';
+import ProductDetail from './Components/ProductDetail';
 import UserForm from './Components/UserForm';
 import NavBar from './Components/Navbar';
 import AboutUs from './Components/AboutUs';
@@ -27,6 +28,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/products/:id" element={<ProductDetail />} />
               <Route path="/user-form" element={<UserForm />} />
               <Route path="/contact" element={<Contactform />} />
               <Route path="/admin-login" element={<AdminLogin onLogin={handleLogin} />} />
