@@ -1,7 +1,5 @@
 .App {
-  background-image: url("../src/assets/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #f0f4ff 0%, #d9e4f5 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
