@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./UserForm.css"; // Import CSS for styling the form
 
 function UserForm() {
+    const [form, setForm] = useState({ name: '', email: '', contact: '', company: '', quantity: '' });
+
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.id]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        await fetch('http://localhost:5050/api/enquiries', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(form)
+        });
+    };
+
     return (
         <>
             <button
@@ -35,7 +50,7 @@ function UserForm() {
                             ></button>
                         </div>
                         <div className="modal-body">
-                            <form>
+                            <form onSubmit={handleSubmit}>
                                 <div className="form-group">
                                     <label htmlFor="name">Your Name</label>
                                     <input
@@ -43,6 +58,8 @@ function UserForm() {
                                         id="name"
                                         className="form-control"
                                         placeholder="Enter your name"
+                                        value={form.name}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
@@ -53,6 +70,8 @@ function UserForm() {
                                         id="email"
                                         className="form-control"
                                         placeholder="Enter your email"
+                                        value={form.email}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
@@ -63,6 +82,8 @@ function UserForm() {
                                         id="contact"
                                         className="form-control"
                                         placeholder="Enter your contact number"
+                                        value={form.contact}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
@@ -73,6 +94,8 @@ function UserForm() {
                                         id="company"
                                         className="form-control"
                                         placeholder="Enter your company name"
+                                        value={form.company}
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="form-group">
@@ -82,26 +105,24 @@ function UserForm() {
                                         id="quantity"
                                         className="form-control"
                                         placeholder="Enter quantity"
+                                        value={form.quantity}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="close-btn" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="submit" className="submit-btn">
+                                        Submit Enquiry
+                                    </button>
+                                </div>
                             </form>
                         </div>
-                        <div className="modal-footer">
-                            <button
-                                type="button"
-                                className="close-btn"
-                                data-bs-dismiss="modal"
-                            >
-                                Close
-                            </button>
-                            <button type="submit" className="submit-btn">
-                                Submit Enquiry
-                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
         </>
     );
 }
