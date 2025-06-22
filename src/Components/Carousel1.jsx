@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './Carousel1.css'
+import './Carousel1.css';
 
 const MyCarousel = () => {
   const images = [
@@ -20,23 +20,22 @@ const MyCarousel = () => {
   ];
 
   return (
-    <div style={{maxWidth:'40%',display:'flex',alignSelf:'center'}}>
-        <Carousel
-      infiniteLoop
-      autoPlay
-      showThumbs={false}
-      showStatus={false}
-      interval={5050}
-    >
-      {images.map((image, index) => (
-        <div key={index}>
-          <img src={image.url} alt={`Slide ${index + 1}`} className='image-height'/>
-          <p className="legend">{image.text}</p>
-        </div>
-      ))}
-    </Carousel>
+    <div className="carousel-container">
+      <Carousel
+        infiniteLoop
+        autoPlay
+        showThumbs={false}
+        showStatus={false}
+        interval={5000}
+      >
+        {images.map((image, index) => (
+          <div key={index}>
+            <img src={image.url} alt={`Slide ${index + 1}`} className="image-height" />
+            <p className="legend">{image.text}</p>
+          </div>
+        ))}
+      </Carousel>
     </div>
-    
   );
 };
 

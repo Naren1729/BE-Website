@@ -1,6 +1,5 @@
 .navBar {
-  /* background: #bbe4e9; */
-  background: azure;
+  background: linear-gradient(135deg, #0048aa, #40a8f0);
   border-radius: 15px;
   font-size: 1.25em;
   align-items: center;
@@ -8,6 +7,7 @@
   padding: 10px 15px;
   height: 70px;
   margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
@@ -28,6 +28,7 @@
 
 b {
   font-size: 1.5em;
+  color: white;
 }
 
 .navbar-nav {
@@ -39,5 +40,10 @@ b {
   font-size: 1em;
   margin-left: 15px;
   font-weight: 600;
+  color: white;
   /* Adds spacing between individual links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700;
 }
