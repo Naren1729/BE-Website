@@ -10,20 +10,28 @@ import AboutUs from './Components/AboutUs';
 import Contactform from './Components/Contactform';
 import AdminLogin from './Components/admin/AdminLogin';
 import AdminPage from './Components/admin/AdminPage';
+import Login from './Components/Login';
+import Register from './Components/Register';
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(localStorage.getItem('isAdmin') === 'true');
+  const [loggedIn, setLoggedIn] = useState(localStorage.getItem('loggedIn') === 'true');
 
   const handleLogin = (status) => {
     setIsAdmin(status);
     localStorage.setItem('isAdmin', status);
   };
 
+  const handleUserLogin = (status) => {
+    setLoggedIn(status);
+    localStorage.setItem('loggedIn', status);
+  };
+
   return (
     <Router>
       <div className="App">
         <>
-          <NavBar />
+          <NavBar loggedIn={loggedIn} onLogout={() => handleUserLogin(false)} />
           <div style={{ paddingTop: "40px" }}>
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -31,6 +39,8 @@ function App() {
               <Route path="/products/:id" element={<ProductDetail />} />
               <Route path="/user-form" element={<UserForm />} />
               <Route path="/contact" element={<Contactform />} />
+              <Route path="/login" element={<Login onLogin={() => handleUserLogin(true)} />} />
+              <Route path="/register" element={<Register />} />
               <Route path="/admin-login" element={<AdminLogin onLogin={handleLogin} />} />
               {/* Admin Route */}
               <Route

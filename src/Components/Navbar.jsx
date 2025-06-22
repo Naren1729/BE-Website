@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../assets/logo2.png";
 import "./Navbar.css";
 
-function NavBar() {
+function NavBar({ loggedIn, onLogout }) {
   return (
     <Navbar expand="lg" sticky="top" className="navBar">
       <Container fluid className="navbar-container">
@@ -32,6 +32,14 @@ function NavBar() {
               Products
             </Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
+            {loggedIn ? (
+              <Nav.Link onClick={onLogout}>Logout</Nav.Link>
+            ) : (
+              <>
+                <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                <Nav.Link as={Link} to="/register">Register</Nav.Link>
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
