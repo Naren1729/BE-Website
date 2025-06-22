@@ -59,14 +59,18 @@ app.post('/api/products', (req, res) => {
 // Register a new user
 app.post('/api/register', (req, res) => {
   const user = req.body;
+
   readJson(USERS_FILE, (err, users) => {
+
     if (err) return res.status(500).json({ message: 'Failed to load users' });
     if (users.find(u => u.username === user.username)) {
       return res.status(400).json({ message: 'User already exists' });
     }
     const newUser = { ...user, id: users.length + 1, role: 'user' };
     users.push(newUser);
+
     writeJson(USERS_FILE, users, err2 => {
+
       if (err2) return res.status(500).json({ message: 'Failed to save user' });
       res.json({ message: 'Registered successfully' });
     });
@@ -76,7 +80,9 @@ app.post('/api/register', (req, res) => {
 // Login user
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
+
   readJson(USERS_FILE, (err, users) => {
+
     if (err) return res.status(500).json({ message: 'Failed to load users' });
     const user = users.find(u => u.username === username && u.password === password);
     if (!user) return res.status(401).json({ message: 'Invalid credentials' });
@@ -87,10 +93,12 @@ app.post('/api/login', (req, res) => {
 // Save enquiry
 app.post('/api/enquiries', (req, res) => {
   const enquiry = req.body;
+
   readJson(ENQUIRIES_FILE, (err, enquiries) => {
     if (err) return res.status(500).json({ message: 'Failed to load enquiries' });
     enquiries.push({ ...enquiry, id: enquiries.length + 1 });
     writeJson(ENQUIRIES_FILE, enquiries, err2 => {
+
       if (err2) return res.status(500).json({ message: 'Failed to save enquiry' });
       res.json({ message: 'Enquiry saved' });
     });
@@ -99,7 +107,9 @@ app.post('/api/enquiries', (req, res) => {
 
 // Get enquiries
 app.get('/api/enquiries', (req, res) => {
+
   readJson(ENQUIRIES_FILE, (err, enquiries) => {
+
     if (err) return res.status(500).json({ message: 'Failed to load enquiries' });
     res.json(enquiries);
   });
